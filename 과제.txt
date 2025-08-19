@@ -1,0 +1,20 @@
+과제 
+- REST API 구현
+- jcifs-ng 라이브러리 활용 (imagetab table의 : path + fname 조합)
+
+GET	/api/v1/studies/{studyinstanceuid}/{seriesinstanceuid}
+-> response type : JSON
+{
+imageCnt : 10
+data : [
+	data1(Base64로 인코딩된 문자열),
+	data2,
+	data3,
+	...
+]
+}
+
+DicomResponseDto {
+private int imageCnt;
+private String[] data;
+}
